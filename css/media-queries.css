@@ -1,0 +1,107 @@
+@media screen and (max-width: 767px) {
+  .background {
+    background-position: center;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-frame {
+    width: 155px;
+    height: 45px;
+    margin-right: 140px;
+  }
+
+  .callback {
+    display: none;
+  }
+
+  .doma-trabboti {
+    width: 340px;
+    height: 40px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .description {
+    size: 16px;
+    width: 340px;
+    height: 40px;
+  }
+
+  .div-contact-us:after {
+    display: none;
+  }
+
+  .div-contact-us:before {
+    width: 170px;
+  }
+
+  .div-contact-us {
+    width: 500px;
+    height: 20px;
+  }
+
+  .button-contact-us {
+    width: 180px;
+    height: 20px;
+    margin-left: 14px;
+  }
+
+  .main-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup {
+    width: 375px;
+    height: 465px;
+  }
+
+  .header-popup {
+    height: 80px;
+    align-items: center;
+  }
+
+  .button-close-popup {
+    width: 55px;
+    height: 20px;
+  }
+
+  .title-popup {
+    text-align: center;
+    width: 340px;
+    height: 70px;
+    line-height: 1;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .input {
+    width: 340px;
+  }
+
+  .main-div-confidentially {
+    width: 235px;
+    height: 45px;
+    margin-left: 65px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .div-confidentially {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-done-popup {
+    width: 340px;
+    height: 50px;
+  }
+}

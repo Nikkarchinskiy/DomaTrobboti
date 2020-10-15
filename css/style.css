@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "Halvar Engschrift DEMO";
+  src: url("../fonts/HalvarEngschriftDEMO-Regular.woff2") format("woff2"),
+    url("../fonts/HalvarEngschriftDEMO-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TRY Vesterbro";
+  src: url("../fonts/TRYVesterbro-Regular.woff2") format("woff2"),
+    url("../fonts/TRYVesterbro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  background: url(../images//terrace-final.jpg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 36px 34px;
+  background-size: cover;
+}
+
+.background > div {
+  position: relative;
+  z-index: 1;
+}
+
+.background::before {
+  position: absolute;
+  content: "";
+  background: rgba(21, 57, 58, 0.8);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-callback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 140px;
+  cursor: pointer;
+}
+
+.callback {
+  font-family: "Halvar Engschrift DEMO";
+  color: #eaaf7d;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.doma-trabboti {
+  font-family: "TRY Vesterbro";
+  color: #eaaf7d;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: "Halvar Engschrift DEMO";
+  color: #ffffff;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.button-contact-us {
+  font-family: "Halvar Engschrift DEMO";
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  line-height: 23, 16px;
+  size: 20px;
+}
+
+.div-contact-us {
+  position: relative;
+  width: 660px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.div-contact-us:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 212px;
+  background-color: #ffffff;
+  opacity: 20%;
+}
+.div-contact-us:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 2px;
+  width: 212px;
+  background-color: #ffffff;
+  opacity: 20%;
+}
+
+main.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  left: ;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.url {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.instagram {
+  margin-left: 14px;
+}
+
+.facebook {
+  margin-right: 14px;
+}
+
+.main-popup {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.main-popup__open {
+  display: flex;
+}
+
+.popup {
+  width: 660px;
+  height: 440px;
+  background: #ffffff;
+  z-index: 4;
+}
+
+.header-popup {
+  margin-right: 28px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 40px;
+}
+
+.button-close-popup {
+  font-family: "Halvar Engschrift DEMO";
+  height: 14px;
+  width: 40px;
+  color: #15393a;
+  opacity: 0.7;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-close-popup:focus,
+.button-close-popup:active {
+  border: none;
+  outline: none;
+}
+
+.title-popup {
+  font-family: "TRY Vesterbro";
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 659px;
+  height: 34px;
+  font-weight: 500;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #f2f2f2;
+  width: 420px;
+  text-align: center;
+}
+
+.input::placeholder {
+  transition: opacity 0.3s;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+.input::placeholder {
+  font-family: "Halvar Engschrift DEMO";
+  text-align: center;
+  color: 808080;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.div-input-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-name {
+  margin-bottom: 36px;
+}
+
+.input-telephone {
+  margin-bottom: 40px;
+}
+
+.text-confidentially {
+  color: #c4c4c4;
+  font-family: "Halvar Engschrift DEMO";
+  font-weight: 300;
+}
+
+.div-confidentially {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-left: 38px;
+  width: 20px;
+  height: 20px;
+}
+
+.confidentially {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main-div-confidentially {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-done-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: "Halvar Engschrift DEMO";
+  color: #ffffff;
+  background: rgba(21, 57, 58, 0.7);
+  width: 420px;
+  height: 51px;
+  cursor: pointer;
+}
+
+.button-done-popup:focus,
+.button-done-popup:active {
+  border: none;
+  outline: none;
+}
+
+.text-in-button-done {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.div-button-done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.deckorate-span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: 1px solid #e0e2e4;
+  cursor: pointer;
+}
+
+.confidentially:checked + .deckorate-span {
+  background-image: url(../images/done.jpg);
+}
